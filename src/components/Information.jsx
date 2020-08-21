@@ -3,7 +3,7 @@ import React from 'react'
 const Information = (props) => {
 
     return (
-        <div className="container">
+        <div className="information">
             {props.city && props.country &&
                 <h1 className="city-country">{props.city},{props.country}</h1>}
             {props.temperature &&
