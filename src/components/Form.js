@@ -6,14 +6,11 @@ const Form = props => {
             <form onSubmit={props.loadWeather}>
                 <div>{props.error ? error() : ""}</div>
                 <div className='row align-items-center'>
-                    <div className='col col-md-5'>
-                        <input type='text' className='form-control' name='city' placeholder='Choose a City' autocomplete="off" />
+                    <div className='col col-md-4'>
+                        <input type='text' className='form-control' name='city' placeholder='Choose a City' autoComplete='off' />
                     </div>
-                    <div className='col col-md-5'>
-                        <input type='text' className='form-control' name='country' placeholder='Choose a Country' autocomplete="off" />
-                    </div>
-                    <div className='col col-md-2'>
-                        <button className='btn btn-outline-primary btn-lg' id="button">Go</button>
+                    <div className='col col-md-4'>
+                        <button className='btn btn-outline-primary btn-lg' id="button">Get weather</button>
                     </div>
                 </div>
             </form>

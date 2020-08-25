@@ -8,10 +8,10 @@
 /* Form */
 form {
     margin-top: 5rem;
+    margin-left: 350px;
   }
   
-  form input[name="city"],
-  form input[name="country"] {
+  form input[name="city"]{
     background-color: transparent;
     color: white;
     border: none;
@@ -21,16 +21,16 @@ form {
     font-weight: bold;
   }
 
-  .container input,
-  .container ::-webkit-input-placeholder {
-    color: white !important;
-  }
   
   .container input:focus {
     background-color: transparent;
     box-shadow: none !important;
     border: none;
     border-bottom: 2px solid #3399FF;
+  }
+  
+  input::placeholder {
+    color:gray !important;
   }
 
   #button{
